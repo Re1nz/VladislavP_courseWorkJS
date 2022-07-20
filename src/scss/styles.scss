@@ -1,0 +1,60 @@
+
+@import 'variables.scss';
+@import 'header.scss';
+@import 'card.scss';
+@import 'fonts.scss';
+@import 'slider.scss';
+@import 'cart.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background: $wb;
+}
+
+.container {
+    z-index: 1;
+    max-width: 1700px;
+    padding: 0 15px;
+    margin: 15px auto;
+
+}
+ 
+.cover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(48, 13, 51, 1);
+   z-index: 1;
+ }
+
+
+
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .slider {
+        display: none;
+    }
+    .slider-dots {
+        display: none;
+    }
+    #lupa {
+        display: none;
+    }
+    #productContainer {
+        flex-wrap: wrap;
+    }
+  
+}

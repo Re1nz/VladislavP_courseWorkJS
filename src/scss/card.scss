@@ -1,0 +1,116 @@
+
+
+.card-title {
+  margin: 20px;
+  text-align: center;
+  color: $white;
+  font-weight: 900;
+  font-size: $_24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card ul {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 45px;
+
+  & li {
+    position: relative;
+    transition: 0.5s;
+    &:hover .cardName {
+      display: block;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    &:hover .cardCost {
+      display: block;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    &:hover .addBusketButton {
+      display: block;
+      opacity: 1;
+      cursor: pointer;
+    }
+   
+   
+   
+    
+    .addBusketButton {
+      opacity: 0;
+      position: absolute;
+      top: 80%;
+      left: 10px;
+      color: $white;
+      font-weight: 900;
+      font-size: $_24px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border: none;
+      border-radius: 5px;
+      width: 90%;
+      height: 30px;
+      display: block;
+      margin: auto;
+      background: $wb;
+      transition: 0.2s;
+      &:active  {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+}
+
+
+.cardName  {
+  font-weight: 900;
+  font-size: $_24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .5);
+  color: $white;
+  padding-top: 150px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.25s;
+  
+}
+
+.cardCost {
+  font-weight: 900;
+  font-size: $_24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  color: $white;
+  text-align: center;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+
+
+.productImage {
+  display: none;
+  max-width: 100%;
+  display: block;
+  border-radius: 45px;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.4);
+  }
+}
+
+
+  
+
+
